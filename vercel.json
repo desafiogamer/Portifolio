@@ -1,12 +1,10 @@
 {
     "version": 2,
-    "builds": [
+    "builds":[
         {
-            "src": "meu_portifolio/wsgi.py",
-            "use": "@vercel/python",
-            "config": {
-                "runtime": "python3.10.0"
-            }
+            "src":"meu_portifolio/wsgi.py",
+            "use":"@vercel/python",
+            "config": {"runtime": "python3.10.0"}
         },
         {
             "src": "build_files.sh",
@@ -14,16 +12,16 @@
             "config": {
                 "distDir": "staticfiles"
             }
-        }
+        }      
     ],
-    "routes": [
+    "routes" :[
         {
             "src": "/static/(.*)",
             "dest": "/static/$1"
         },
         {
             "src": "/(.*)",
-            "dest": "meu_portifolio/wsgi.py"
+            "dest":"meu_portifolio/wsgi.py"
         }
     ]
 }
