@@ -759,9 +759,7 @@ span.carregando{
 
 .contact{
     padding-bottom: 7rem;
-    background-image: url(../img/fundo-contact.jpg);
-    background-size: cover;
-    background-position: left;
+    background: var(--second-bg-color);
 }
 
 .neon-btn{
