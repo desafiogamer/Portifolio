@@ -1,7 +1,7 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +10,10 @@
     <link rel="stylesheet" href="{% static 'css/estilo.css' %}">
 </head>
 <body>
+    
     <header id="header" class="header">
         <a href="#" class="logo"><i class="bi bi-person-circle"></i><span><</span> João. <span>/></span><span class="animate" style="--i:.1;"></span></a>
-
         <div class="bi bi-list" id="menu-icon"><span class="animate" style="--i:.1;"></span></div>
-
         <nav id="nav" class="navbar">
             <a href="#home" class="active">Inicio</a>
             <a href="#about" >Sobre</a>
@@ -25,6 +24,7 @@
             <span class="animate" style="--i:.1;"></span>
         </nav>
     </header>
+    
     <section class="home show-animate" id="home">
         <div class="home-content">
             <div class="separacao">
@@ -32,7 +32,6 @@
                 <div class="text-animate">
                     <h3>Developer Fullstack</h3>
                 </div>
-            
                 <p>Tenho 21 anos, comecei minha jornada na programação com 20 anos, minhas principais skills são <strong>CSS, HTML, JavaScript, Python.</strong></p>
             </div>
             <div class="home-sci">
@@ -51,19 +50,18 @@
                 </div>
             </div>
         </div>
-        
         <div class="home-imgHover"></div>
         <span class="animate home-img" style="--i:.1;"></span>
     </section>
+    
     <div class="disfar"></div>
+    
     <section class="about" id="about">
         <h2 class="heading">Sobre <span>mim( )</span></h2>
-
         <div class="liga-pai">
             <span class="liga"></span>
             <span class="liga"></span>
         </div>
-
         <div class="about-img">
             <img src="{% static 'img/foto-perfil.jpg' %}" alt="">
             <span class="circle-spin"></span>
@@ -73,7 +71,6 @@
             <p>Olá sou joão Vitor de 21 anos, sou desenvolvedor, gosto muito do que eu faço. Estudo diariamente para aprimorar
             minhas habilidades. Busco não ser perfeito mais sim um dos melhores nesta área e com foco e determinação sei que vou
             chegar lá.
-            
             Atualmente estou com 1 ano de experiência criando vários projetos com: <strong>python, Django, HTML, CSS, javascript, jquery,
             Bootstrap </strong> e atualmente estudando PHP.
             Meu objetivo é atuar como full-stacks.</p>
@@ -87,7 +84,6 @@
                     <p>Desde pequeno sempre gostei muito de jogos eletronicos, aos meus 17 anos senti curiosidade de como os jogos eram criados e fui pesquisar sobre, Foi ai que tive meu primeiro contato com programação aprendi coisas basicas de criação de jogos mais acabei que não continuei e decidi parar com a programação. Bom... Era oque eu pensava porque em 2022 resolvi voltar novamente só que dessa vez no desenvolvimento web, desde então estou até nos dias de hoje nessa area que eu gosto muito.</p>
                 </div>
             </div>
-            
         </div>
     </section>
 
@@ -100,12 +96,11 @@
                     <h4>Full<span>Stack</span></h4>
                     <p>Sistema de adicionar veiculos, <br>excluir,editar,filtro,login,registrar,recuperção de senha e perfil do
                         usuario</p>
-                    <a href="https://desafiogamer.pythonanywhere.com/" target="_blank"><i
-                            class="bi bi-box-arrow-up-right"></i></a>
+                    <a href="https://desafiogamer.pythonanywhere.com/" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
                 </div>
             </div>
         </div>
-
+        
          <div class="portifolio-container">
             <div class="portifolio-box">
                 <img src="{% static 'img/projeto1.png' %}" alt="">
@@ -139,9 +134,9 @@
             </div>
         </div>
     </section>
+    
     <section class="skills" id="skills">
         <h2 class="heading">Habili<span>dades( )</span></h2>
-        
         <div class="pista">
             <div class="carro">
                 <div class="molde">
@@ -168,7 +163,6 @@
         <div class="container experience_container">
             <div class="experience_frontend">
                 <h3>Habilidades Front-End</h3>
-
                 <div class="experience_content">
                     <article class="experience_details">
                         <img src="{% static 'img/html-5.png' %}" alt="">
@@ -177,6 +171,7 @@
                             <small class="text-light">Experiente</small>
                         </div>
                     </article>
+                    
                     <article class="experience_details">
                         <img src="{% static 'img/css.png' %}" alt="">
                         <div>
@@ -184,6 +179,7 @@
                             <small class="text-light">Experiente</small>
                         </div>
                     </article>
+                    
                     <article class="experience_details">
                         <img src="{% static 'img/javascript-50.png' %}" alt="">
                         <div>
@@ -191,6 +187,7 @@
                             <small class="text-light">Intermediario</small>
                         </div>
                     </article>
+                    
                     <article class="experience_details">
                         <img src="{% static 'img/bootstrap.png' %}" alt="">
                         <div>
@@ -198,6 +195,7 @@
                             <small class="text-light">Básico</small>
                         </div>
                     </article>
+                    
                     <article class="experience_details">
                         <img src="{% static 'img/jquery.png' %}" alt="">
                         <div>
@@ -207,7 +205,6 @@
                     </article>
                 </div>
             </div>
-
             <div class="experienc_backend">
                 <h3>Habilidades Back-End</h3>
                 <div class="experience_content">
@@ -218,6 +215,7 @@
                             <small class="text-light">Experiente</small>
                         </div>
                     </article>
+                    
                     <article class="experience_details">
                         <img src="{% static 'img/django-icon.png' %}" alt="">
                         <div>
@@ -225,6 +223,7 @@
                             <small class="text-light">Experiente</small>
                         </div>
                     </article>
+                    
                     <article class="experience_details">
                         <img src="{% static 'img/mysql-24.png' %}" alt="">
                         <div>
@@ -232,11 +231,13 @@
                             <small class="text-light">Intermediario</small>
                         </div>
                     </article>
+                </div>
             </div>
         </div>
-
     </section>
+    
     <div class="disfarse"></div>
+    
     <section class="contact" id="contact">
         <h2 class="heading">Entre em <span>Contato <i class="bi bi-envelope-at"></i></span></h2>
         <form id="contact-form" action="{% url 'send_email' %}" role="form" required>
@@ -245,7 +246,6 @@
                 <div class="input-field">
                     <input id="nome" type="text" name="nome" placeholder="Nome completo" required>
                 </div>
-
                 <div class="input-field">
                     <input id="email" type="email" name="email" placeholder="Endereço de email" required>
                 </div>
@@ -255,7 +255,6 @@
                 <div class="input-field">
                     <input id="telefone" type="text" name="telefone" placeholder="Numero de telefone" required>
                 </div>
-
                 <div class="input-field">
                     <input id="assunto_email" type="text" name="assunto_email" placeholder="Assunto do email" required>
                 </div>
@@ -264,18 +263,17 @@
             <div class="textarea-field">
                 <textarea name="assunto" id="assunto" cols="30" rows="10" placeholder="Sua menssagem" required></textarea>
             </div>
-
+            
             <div class="btn-box btns">
                 <button type="submit" class="btn">Enviar</button>
             </div>
-            
         </form>
     </section>
+    
     <footer class="footer">
         <div class="footer-text">
             <p>©Site desenvolvido por João vitor gentil da silva</p>
         </div>
-
         <div class="footer-iconTop">
             <a class="bi bi-arrow-up" href="#home"></a>
         </div>
